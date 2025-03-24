@@ -8,7 +8,6 @@ export const getNotes = async (req, res) => {
         res.status(500).json({ message: "Error fetching notes", error });
     }
 };
-
 export const createNote = async (req, res) => {
     try {
         const { title, content } = req.body;
